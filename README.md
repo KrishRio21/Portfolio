@@ -7,7 +7,7 @@ Welcome to my personal portfolio website! This project reflects my passion for *
 ## 🚀 Live Demo
 
 👉 [Visit the Live Website](https://portfolio-krishs-projects-41491346.vercel.app/)  
-*(Replace with your actual live URL)*
+
 
 ---
 
