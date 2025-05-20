@@ -1,4 +1,4 @@
-# 🌟 Sreepada Mohana Krishna's Portfolio Website
+# 🌟Krish's Portfolio Website
 
 Welcome to my personal portfolio website! This project reflects my passion for **web development** and **ethical hacking**, showcasing both my technical skills and cybersecurity expertise. The site is crafted with modern technologies and designed for an engaging, responsive user experience.
 
@@ -6,7 +6,7 @@ Welcome to my personal portfolio website! This project reflects my passion for *
 
 ## 🚀 Live Demo
 
-👉 [Visit the Live Website](https://your-deployed-site-link.com)  
+👉 [Visit the Live Website](https://portfolio-krishs-projects-41491346.vercel.app/)  
 *(Replace with your actual live URL)*
 
 ---
