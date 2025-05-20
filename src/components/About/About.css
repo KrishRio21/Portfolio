@@ -1,0 +1,63 @@
+.about-hero-section {
+    background: linear-gradient(270deg, #0000008e, #000000b9), url(https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/whllomosotryq3qmdlye);
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+}
+
+/* Existing styles for cybersecurity skills */
+.bg-burpSuiteColor {
+  background-color: #f28c38; /* Orange, matches Burp Suite branding */
+}
+.border-burpSuiteColor {
+  border-color: #f28c38;
+}
+
+.bg-nmapColor {
+  background-color: #3b5998; /* Blue, matches Nmap branding */
+}
+.border-nmapColor {
+  border-color: #3b5998;
+}
+
+.bg-kaliLinuxColor {
+  background-color: #1d2526; /* Dark gray, matches Kali Linux branding */
+}
+.border-kaliLinuxColor {
+  border-color: #1d2526;
+}
+
+.bg-wiresharkColor {
+  background-color: #1679a1; /* Teal, matches Wireshark branding */
+}
+.border-wiresharkColor {
+  border-color: #1679a1;
+}
+
+.bg-metasploitColor {
+  background-color: #b31b1b; /* Red, matches Metasploit branding */
+}
+.border-metasploitColor {
+  border-color: #b31b1b;
+}
+
+/* New styles for education and certifications */
+.bg-educationColor {
+  background-color: #4a90e2; /* Blue, professional and distinct */
+}
+.border-educationColor {
+  border-color: #4a90e2;
+}
+
+.bg-certificationColor {
+  background-color: #50c878; /* Green, signifies achievement */
+}
+.border-certificationColor {
+  border-color: #50c878;
+}
+.advent-of-cyber-badge {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 100 auto;
+}
