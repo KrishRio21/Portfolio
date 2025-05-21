@@ -1,43 +1,80 @@
 .home-hero-section {
-  background: linear-gradient(270deg, #0000006b, #000000da), url(https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/v080zplw8kiqk6mw8pgo);
+  background: linear-gradient(270deg, #0000006b, #000000da),
+    url(https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto,w_auto/v080zplw8kiqk6mw8pgo);
   background-size: cover;
-  background-position: center 80%;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 #name-underline {
   stroke-dasharray: 428;
-  animation: .8s fillSvg ease-in;
+  animation: 0.8s fillSvg ease-in;
 }
 
 @keyframes fillSvg {
   0% {
     stroke-dashoffset: 428;
   }
-
   100% {
     stroke-dashoffset: 0;
   }
 }
 
 .glow {
-  /* color: #44ADF8; Your text color */
-  text-shadow: 0 0 5px #f0f7fc27, 0 0 10px #000000bb, 0 0 15px #44adf81f, 0 0 20px #04a1dfb9, 0 0 30px #0088ff2f, 0 0 40px #0088ff0e, 0 0 50px #0088ff2a;
-}
-
-@keyframes wave {
-  0% { transform: rotate(0deg); }
-  10% { transform: rotate(14deg); }
-  20% { transform: rotate(-8deg); }
-  30% { transform: rotate(14deg); }
-  40% { transform: rotate(-4deg); }
-  50% { transform: rotate(10deg); }
-  60% { transform: rotate(0deg); }
-  100% { transform: rotate(0deg); }
+  text-shadow: 0 0 5px #f0f7fc27, 0 0 10px #000000bb;
 }
 
 .emoji-wave {
   display: inline-block;
   transform-origin: 70% 70%;
-  animation: wave 2s infinite;
+  animation: wave 3s infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .glow {
+    text-shadow: 0 0 3px #f0f7fc27;
+  }
+  .emoji-wave {
+    animation: none;
+  }
+  .home-hero-section {
+    background-position: center;
+  }
+  .animate-rotate-up-down-left,
+  .animate-rotate-up-down-right,
+  .animate-rotate-left-right {
+    animation: none;
+    transform: scale(0.8);
+  }
+  .holographic-card {
+    animation: none;
+    box-shadow: 0 0 5px rgba(102, 224, 255, 0.5);
+  }
 }

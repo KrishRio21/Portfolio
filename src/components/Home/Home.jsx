@@ -71,7 +71,7 @@ function Home() {
           </div>
           <div>
             <img
-              src='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/u8g7elqqmc3ogww8lkg3'
+              src='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto,w_auto/u8g7elqqmc3ogww8lkg3'
               className='h-[200px] sm:h-[250px] md:h-[400px] mt-10 md:mt-0 w-auto max-w-full'
               alt="homepage-illustration"
             />
@@ -104,18 +104,18 @@ function Home() {
             </div>
             <div className='relative w-full flex justify-center'>
               <img
-                src={profile}
-                alt="profile-img"
+                src='https://res.cloudinary.com/dgso2spkq/image/upload/v1747804705/profile_img_za9uug.png'
+                alt='profile-img'
                 className='h-40 sm:h-52 z-10 holographic-card'
               />
               <img
-                src={gradient}
-                alt="gradient"
-                className='absolute -top-12 h-[250px] sm:h-[350px] z-0'
+                src='https://res.cloudinary.com/dgso2spkq/image/upload/v1747804877/radial_gradient_du5nfr.webp'
+                alt='gradient'
+                className='absolute -top-12 h-[200px] sm:h-[250px] z-0'
               />
               <img
-                src={whitegradient}
-                alt="gradient"
+                src='https://res.cloudinary.com/dgso2spkq/image/upload/v1747804946/white_radial_gradient_hmqou5.webp'
+                alt='gradient'
                 className='absolute blur-xl h-40 sm:h-52 z-0'
               />
             </div>
@@ -138,28 +138,28 @@ function Home() {
             <Swiper
               modules={[EffectCards, Pagination]}
               effect='cards'
-              pagination={{ clickable: true }}
+              pagination={{ clickable: true, dynamicBullets: true }}
               grabCursor={true}
               spaceBetween={10}
-              style={{ overflow: 'visible !important' }}
+              style={{ overflow: 'visible', paddingBottom: '40px' }}
             >
               <SwiperSlide className='justify-center' style={{ display: 'flex' }}>
                 <ServiceCard
-                  image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/uiux'
+                  image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto,w_auto/uiux'
                   title='Ethical Hacking & Vulnerability Assessments'
                   description='Leveraging tools like Burp Suite, Nmap, and Metasploit to identify and mitigate security risks, ensuring your applications are fortified against threats.'
                 />
               </SwiperSlide>
               <SwiperSlide className='justify-center' style={{ display: 'flex' }}>
                 <ServiceCard
-                  image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/frontend'
+                  image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto,w_auto/frontend'
                   title='Front-End Development'
                   description='Crafting dynamic and responsive websites using HTML, CSS, JavaScript, and modern frameworks like React.js, Next.js, and Tailwind CSS, with a focus on user experience and security.'
                 />
               </SwiperSlide>
               <SwiperSlide className='justify-center' style={{ display: 'flex' }}>
                 <ServiceCard
-                  image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/backend'
+                  image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto,w_auto/backend'
                   title='Back-End Development'
                   description='Developing secure and scalable back-end systems using Django and Django REST Framework, ensuring your applications perform efficiently and are protected from vulnerabilities.'
                 />
@@ -170,17 +170,17 @@ function Home() {
           {/* For larger screens */}
           <div className='hidden md:flex justify-center items-center flex-row gap-14 flex-wrap mt-14'>
             <ServiceCard
-              image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/uiux'
+              image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto,w_auto/uiux'
               title='Ethical Hacking & Vulnerability Assessments'
               description='Leveraging tools like Burp Suite, Nmap, and Metasploit to identify and mitigate security risks, ensuring your applications are fortified against threats.'
             />
             <ServiceCard
-              image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/frontend'
+              image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto,w_auto/frontend'
               title='Front-End Development'
               description='Crafting dynamic and responsive websites using HTML, CSS, JavaScript, and modern frameworks like React.js, Next.js, and Tailwind CSS, with a focus on user experience and security.'
             />
             <ServiceCard
-              image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/backend'
+              image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto,w_auto/backend'
               title='Back-End Development'
               description='Developing secure and scalable back-end systems using Python, ensuring your applications perform efficiently and are protected from vulnerabilities.'
             />
@@ -208,9 +208,10 @@ function Home() {
                 prev: { translate: ['-10%', 0, 0], rotate: [0, 0, 0] },
                 next: { translate: ['10%', 0, 0], rotate: [0, 0, 0] },
               }}
-              pagination={{ clickable: true }}
+              pagination={{ clickable: true, dynamicBullets: true }}
               grabCursor={true}
               centeredSlides={true}
+              style={{ paddingBottom: '40px' }}
             >
               <SwiperSlide className='justify-center items-center' style={{ display: 'flex' }}>
                 <ProjectCard

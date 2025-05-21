@@ -1,19 +1,15 @@
-import React from "react";
-import Typewriter from "typewriter-effect";
+import React from 'react';
+import Typewriter from 'typewriter-effect';
 
 function TypeEffect() {
   return (
     <Typewriter
       options={{
-        strings: [
-          "Cybersecurity Analyst",
-          "Full Stack Developer",
-          "Ethical Hacker",
-        ],
+        strings: ['Cybersecurity Analyst', 'Full Stack Developer', 'Ethical Hacker'],
         autoStart: true,
         loop: true,
-        delay: 40,
-        deleteSpeed: 30,
+        delay: 60,
+        deleteSpeed: 50,
       }}
     />
   );
